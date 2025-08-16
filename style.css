@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+:root{
+
+/* ### Primary */
+--Green-500: hsl(158, 36%, 37%);
+--Green-700: hsl(158, 42%, 18%);
+
+/* ### Neutral */
+--Black: hsl(212, 21%, 14%);
+--Grey: hsl(228, 12%, 48%);
+--Cream: hsl(30, 38%, 92%);
+--White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--Cream);
+    width: 100vw;
+    font-family: Montserrat;
+}
+main{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--White);
+    border-radius: .5rem;
+}
+main .left img{
+    width: 100%;
+    border-radius: .5rem 0 0 .5rem ;
+
+}
+.right{
+    width: 100%;
+}
+.right h5{
+    letter-spacing: .3rem;
+    font-size: .8rem;
+    color: var(--Grey);
+    text-align: left;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding:  0 3rem;
+
+}
+.right h1{
+    margin: 2rem 0;
+    font-size:2.5rem;
+    padding:  0 3rem;
+    line-height: 1;
+    color: var(--Black);
+}
+.right p {
+    padding:  0 3rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.5;
+    color: var(--Grey);
+    letter-spacing: .08rem;
+
+}
+.price{
+    padding:  0 2rem;
+    display: flex;
+    margin: 2rem 0;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.btn{
+    padding:  0 3rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.price .new{
+    color: var(--Green-500);
+    text-align: left;
+    font-weight: 700;
+    font-size: 2.5rem;
+
+}
+.price .old{
+    color: var(--Grey);
+    margin: 0 0 0 1rem;
+    text-decoration: line-through;
+}
+
+button{
+    border: none;
+    outline: none;
+    width: 100%;
+    color: var(--White);
+    background: var(--Green-500);
+    transition: all .3s ease-in-out;
+    padding: 1rem 1.5rem;
+    border-radius: .7rem;
+}
+button:hover{
+    background: var(--Green-700);
+}
